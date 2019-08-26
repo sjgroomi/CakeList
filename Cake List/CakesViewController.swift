@@ -8,6 +8,10 @@
 
 import UIKit
 
+//TODO: Pull to refresh
+//TODO: Reimplement cake cell constraints so that a nil image doesn't have a
+//      a zero width image view
+
 class CakesViewController: UITableViewController {
     
     let cakeRetriever: CakeRetriever = {
@@ -28,7 +32,13 @@ class CakesViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
         retrieveCakes()
+    }
+    
+    private func configureTableView() {
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 89
     }
     
     private func retrieveCakes() {
@@ -50,12 +60,10 @@ class CakesViewController: UITableViewController {
     }
     
     private func configureCell(at indexPath: IndexPath, cake: Cake) -> UITableViewCell {
-        //TODO: Configure cake cell with method on CakeCell taking a Cake object
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CakeCell", for: indexPath) else as? CakeCell else {
-//            fatalError("Unable to dequeue cake cell")
-//        }
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CakeCell", for: indexPath)
-        cell.textLabel?.text = cake.title
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "CakeCell", for: indexPath) as? CakeCell else {
+            fatalError("Unable to dequeue cake cell")
+        }
+        cell.configure(with: cake)
         return cell
     }
     

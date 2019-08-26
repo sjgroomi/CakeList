@@ -12,17 +12,10 @@ import XCTest
 class URLDataFetcherTests: XCTestCase {
     
     private let url = URL(string: "url")!
-    
-    private struct SuccessfulDataRetriever: URLDataRetrieving {
-        let data: Data
-        func retrieveData(at url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
-            completion(data, nil, nil)
-        }
-    }
 
     func testDataFetcherReturnsDataForResponseWithDataAndNoError() {
         let expectedData = "data".data(using: .utf8)!
-        let dataFetcher = URLDataFetcher(dataRetriever: SuccessfulDataRetriever(data: expectedData),
+        let dataFetcher = URLDataFetcher(dataRetriever: Mocks.SuccessfulDataRetriever(data: expectedData),
                                          url: url)
         let expectation = self.expectation(description: "Completion called")
         dataFetcher.fetchData { result in
@@ -37,23 +30,15 @@ class URLDataFetcherTests: XCTestCase {
         waitForExpectations(timeout: 1, handler: nil)
     }
     
-    private struct ErrorDataRetriever: URLDataRetrieving {
-        struct Error: Swift.Error { }
-        
-        func retrieveData(at url: URL, completion: @escaping (Data?, URLResponse?, Swift.Error?) -> Void) {
-            completion(nil, nil, Error())
-        }
-    }
-    
     func testDataFetcherReturnsErrorForResponseWithError() {
-        let dataFetcher = URLDataFetcher(dataRetriever: ErrorDataRetriever(), url: url)
+        let dataFetcher = URLDataFetcher(dataRetriever: Mocks.ErrorDataRetriever(), url: url)
         let expectation = self.expectation(description: "Completion called")
         dataFetcher.fetchData { result in
             switch result {
             case .success:
                 XCTFail("Unaxpected success case, expecting failure")
             case .failure(let error):
-                XCTAssertTrue(error is ErrorDataRetriever.Error)
+                XCTAssertTrue(error is Mocks.ErrorDataRetriever.Error)
             }
             expectation.fulfill()
         }

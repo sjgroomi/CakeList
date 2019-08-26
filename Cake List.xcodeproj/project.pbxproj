@@ -19,14 +19,17 @@
 		020207A2231444570097F211 /* URLSession+URLDataRetrieving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207A1231444570097F211 /* URLSession+URLDataRetrieving.swift */; };
 		020207A4231445020097F211 /* GenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207A3231445020097F211 /* GenericTableViewDataSource.swift */; };
 		020207A6231445200097F211 /* GenericTableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207A5231445200097F211 /* GenericTableViewDataSourceTests.swift */; };
+		020207A8231449450097F211 /* CakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207A7231449450097F211 /* CakeCell.swift */; };
+		020207AA23144A0D0097F211 /* ImageFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207A923144A0D0097F211 /* ImageFetcherTests.swift */; };
+		020207AC23144A5B0097F211 /* Mike.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 020207AB23144A5A0097F211 /* Mike.jpg */; };
+		020207AE23144ACF0097F211 /* Mocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207AD23144ACF0097F211 /* Mocks.swift */; };
+		020207B023144B6E0097F211 /* ImageFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207AF23144B6E0097F211 /* ImageFetcher.swift */; };
 		DBF17A171B0B648F004E6311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A161B0B648F004E6311 /* main.m */; };
 		DBF17A1A1B0B648F004E6311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A191B0B648F004E6311 /* AppDelegate.m */; };
-		DBF17A1D1B0B648F004E6311 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A1C1B0B648F004E6311 /* MasterViewController.m */; };
 		DBF17A231B0B648F004E6311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF17A211B0B648F004E6311 /* Main.storyboard */; };
 		DBF17A251B0B648F004E6311 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF17A241B0B648F004E6311 /* Images.xcassets */; };
 		DBF17A281B0B648F004E6311 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF17A261B0B648F004E6311 /* LaunchScreen.xib */; };
 		DBF17A341B0B648F004E6311 /* Cake_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A331B0B648F004E6311 /* Cake_ListTests.m */; };
-		DBF17A3F1B0B8E16004E6311 /* CakeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A3E1B0B8E16004E6311 /* CakeCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,21 +55,22 @@
 		020207A1231444570097F211 /* URLSession+URLDataRetrieving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+URLDataRetrieving.swift"; sourceTree = "<group>"; };
 		020207A3231445020097F211 /* GenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSource.swift; sourceTree = "<group>"; };
 		020207A5231445200097F211 /* GenericTableViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSourceTests.swift; sourceTree = "<group>"; };
+		020207A7231449450097F211 /* CakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCell.swift; sourceTree = "<group>"; };
+		020207A923144A0D0097F211 /* ImageFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcherTests.swift; sourceTree = "<group>"; };
+		020207AB23144A5A0097F211 /* Mike.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mike.jpg; sourceTree = "<group>"; };
+		020207AD23144ACF0097F211 /* Mocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mocks.swift; sourceTree = "<group>"; };
+		020207AF23144B6E0097F211 /* ImageFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetcher.swift; sourceTree = "<group>"; };
 		DBF17A111B0B648F004E6311 /* Cake List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cake List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF17A151B0B648F004E6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF17A161B0B648F004E6311 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DBF17A181B0B648F004E6311 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBF17A191B0B648F004E6311 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DBF17A1B1B0B648F004E6311 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		DBF17A1C1B0B648F004E6311 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		DBF17A221B0B648F004E6311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBF17A241B0B648F004E6311 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DBF17A271B0B648F004E6311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DBF17A2D1B0B648F004E6311 /* Cake ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cake ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF17A321B0B648F004E6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF17A331B0B648F004E6311 /* Cake_ListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cake_ListTests.m; sourceTree = "<group>"; };
-		DBF17A3D1B0B8E16004E6311 /* CakeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CakeCell.h; sourceTree = "<group>"; };
-		DBF17A3E1B0B8E16004E6311 /* CakeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CakeCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,7 @@
 				0202079B23143FD70097F211 /* URLDataRetrieving.swift */,
 				020207A1231444570097F211 /* URLSession+URLDataRetrieving.swift */,
 				020207A3231445020097F211 /* GenericTableViewDataSource.swift */,
+				020207AF23144B6E0097F211 /* ImageFetcher.swift */,
 			);
 			path = "Cake List";
 			sourceTree = "<group>";
@@ -145,6 +150,9 @@
 				0202078B2314379F0097F211 /* CakeRetrieverTests.swift */,
 				0202079D231440340097F211 /* URLDataFetcherTests.swift */,
 				020207A5231445200097F211 /* GenericTableViewDataSourceTests.swift */,
+				020207A923144A0D0097F211 /* ImageFetcherTests.swift */,
+				020207AB23144A5A0097F211 /* Mike.jpg */,
+				020207AD23144ACF0097F211 /* Mocks.swift */,
 			);
 			path = "Cake ListTests";
 			sourceTree = "<group>";
@@ -160,8 +168,6 @@
 		DBF17A401B0B8EE3004E6311 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DBF17A1B1B0B648F004E6311 /* MasterViewController.h */,
-				DBF17A1C1B0B648F004E6311 /* MasterViewController.m */,
 				0202079F231443900097F211 /* CakesViewController.swift */,
 			);
 			name = "View Controllers";
@@ -170,8 +176,7 @@
 		DBF17A411B0B8EED004E6311 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				DBF17A3D1B0B8E16004E6311 /* CakeCell.h */,
-				DBF17A3E1B0B8E16004E6311 /* CakeCell.m */,
+				020207A7231449450097F211 /* CakeCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				020207AC23144A5B0097F211 /* Mike.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF17A1A1B0B648F004E6311 /* AppDelegate.m in Sources */,
-				DBF17A3F1B0B8E16004E6311 /* CakeCell.m in Sources */,
+				020207A8231449450097F211 /* CakeCell.swift in Sources */,
 				02020790231439090097F211 /* CakeRetriever.swift in Sources */,
 				0202079A23143E5E0097F211 /* URLDataFetcher.swift in Sources */,
 				020207A4231445020097F211 /* GenericTableViewDataSource.swift in Sources */,
@@ -288,7 +294,7 @@
 				020207A2231444570097F211 /* URLSession+URLDataRetrieving.swift in Sources */,
 				0202079C23143FD70097F211 /* URLDataRetrieving.swift in Sources */,
 				020207A0231443900097F211 /* CakesViewController.swift in Sources */,
-				DBF17A1D1B0B648F004E6311 /* MasterViewController.m in Sources */,
+				020207B023144B6E0097F211 /* ImageFetcher.swift in Sources */,
 				DBF17A171B0B648F004E6311 /* main.m in Sources */,
 				0202078E2314386C0097F211 /* DataFetching.swift in Sources */,
 			);
@@ -301,6 +307,8 @@
 				DBF17A341B0B648F004E6311 /* Cake_ListTests.m in Sources */,
 				0202079E231440340097F211 /* URLDataFetcherTests.swift in Sources */,
 				020207882314347F0097F211 /* CakeTests.swift in Sources */,
+				020207AA23144A0D0097F211 /* ImageFetcherTests.swift in Sources */,
+				020207AE23144ACF0097F211 /* Mocks.swift in Sources */,
 				020207A6231445200097F211 /* GenericTableViewDataSourceTests.swift in Sources */,
 				0202078C2314379F0097F211 /* CakeRetrieverTests.swift in Sources */,
 			);
