@@ -29,36 +29,36 @@
         <scene sceneID="VgW-fR-Quf">
             <objects>
                 <tableViewController title="Master" id="pGg-6v-bdr" customClass="CakesViewController" customModule="Cake_List" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="113" sectionHeaderHeight="22" sectionFooterHeight="22" id="mLL-gJ-YKr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CakeCell" rowHeight="60" id="B52-71-W6G" customClass="CakeCell" customModule="Cake_List" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="22" width="414" height="60"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CakeCell" rowHeight="113" id="B52-71-W6G" customClass="CakeCell" customModule="Cake_List" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="22" width="414" height="113"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="B52-71-W6G" id="yGV-Jd-h9v">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="59.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="B52-71-W6G" id="yGV-Jd-h9v">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="112.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2cJ-YH-PLb">
-                                            <rect key="frame" x="20" y="20.5" width="20" height="20"/>
+                                            <rect key="frame" x="20" y="26.5" width="60" height="60"/>
                                             <color key="backgroundColor" red="0.66666668653488159" green="0.66666668653488159" blue="0.66666668653488159" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="20" placeholder="YES" id="VMZ-lh-50P"/>
-                                                <constraint firstAttribute="width" constant="20" placeholder="YES" id="qP9-ZR-txw"/>
+                                                <constraint firstAttribute="width" constant="60" id="VDk-Dm-W8H"/>
+                                                <constraint firstAttribute="height" constant="60" id="tEi-6O-Qe6"/>
                                                 <constraint firstAttribute="width" secondItem="2cJ-YH-PLb" secondAttribute="height" multiplier="1:1" id="wAF-FO-GlY"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLQ-Hv-eeT">
-                                            <rect key="frame" x="48" y="20.5" width="42" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="88" y="26.5" width="43.5" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAL-IQ-xUk">
-                                            <rect key="frame" x="48" y="49" width="42" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="88" y="55" width="42" height="20.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -69,12 +69,12 @@
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pLQ-Hv-eeT" secondAttribute="trailing" constant="20" symbolic="YES" id="Iou-8R-ufV"/>
                                         <constraint firstItem="XAL-IQ-xUk" firstAttribute="leading" secondItem="pLQ-Hv-eeT" secondAttribute="leading" id="Oa1-su-zWW"/>
                                         <constraint firstItem="XAL-IQ-xUk" firstAttribute="top" secondItem="pLQ-Hv-eeT" secondAttribute="bottom" constant="8" symbolic="YES" id="P8m-xk-YRp"/>
-                                        <constraint firstItem="2cJ-YH-PLb" firstAttribute="width" relation="lessThanOrEqual" secondItem="yGV-Jd-h9v" secondAttribute="width" multiplier="0.3" id="ZSc-ug-JOK"/>
                                         <constraint firstItem="pLQ-Hv-eeT" firstAttribute="top" secondItem="2cJ-YH-PLb" secondAttribute="top" id="ZUS-e1-rtQ"/>
-                                        <constraint firstItem="2cJ-YH-PLb" firstAttribute="top" secondItem="yGV-Jd-h9v" secondAttribute="top" constant="20" symbolic="YES" id="aue-bz-uHd"/>
+                                        <constraint firstItem="2cJ-YH-PLb" firstAttribute="top" relation="greaterThanOrEqual" secondItem="yGV-Jd-h9v" secondAttribute="top" constant="20" symbolic="YES" id="aue-bz-uHd"/>
                                         <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XAL-IQ-xUk" secondAttribute="bottom" constant="20" symbolic="YES" id="mzL-kp-yFb"/>
                                         <constraint firstItem="2cJ-YH-PLb" firstAttribute="leading" secondItem="yGV-Jd-h9v" secondAttribute="leading" constant="20" symbolic="YES" id="rIJ-TG-d9D"/>
                                         <constraint firstItem="pLQ-Hv-eeT" firstAttribute="leading" secondItem="2cJ-YH-PLb" secondAttribute="trailing" constant="8" symbolic="YES" id="rXC-pv-OQ0"/>
+                                        <constraint firstItem="2cJ-YH-PLb" firstAttribute="centerY" secondItem="yGV-Jd-h9v" secondAttribute="centerY" id="vHk-oE-xzK"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

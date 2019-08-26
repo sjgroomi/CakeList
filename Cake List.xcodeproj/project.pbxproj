@@ -29,7 +29,6 @@
 		DBF17A231B0B648F004E6311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF17A211B0B648F004E6311 /* Main.storyboard */; };
 		DBF17A251B0B648F004E6311 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF17A241B0B648F004E6311 /* Images.xcassets */; };
 		DBF17A281B0B648F004E6311 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF17A261B0B648F004E6311 /* LaunchScreen.xib */; };
-		DBF17A341B0B648F004E6311 /* Cake_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A331B0B648F004E6311 /* Cake_ListTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +69,6 @@
 		DBF17A271B0B648F004E6311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DBF17A2D1B0B648F004E6311 /* Cake ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cake ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF17A321B0B648F004E6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBF17A331B0B648F004E6311 /* Cake_ListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cake_ListTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,20 +112,20 @@
 			children = (
 				DBF17A181B0B648F004E6311 /* AppDelegate.h */,
 				DBF17A191B0B648F004E6311 /* AppDelegate.m */,
-				DBF17A401B0B8EE3004E6311 /* View Controllers */,
-				DBF17A411B0B8EED004E6311 /* Cells */,
 				DBF17A211B0B648F004E6311 /* Main.storyboard */,
 				DBF17A241B0B648F004E6311 /* Images.xcassets */,
 				DBF17A261B0B648F004E6311 /* LaunchScreen.xib */,
 				DBF17A141B0B648F004E6311 /* Supporting Files */,
+				DBF17A401B0B8EE3004E6311 /* View Controllers */,
+				DBF17A411B0B8EED004E6311 /* Cells */,
 				02020789231434B60097F211 /* Cake.swift */,
-				0202078D2314386C0097F211 /* DataFetching.swift */,
 				0202078F231439090097F211 /* CakeRetriever.swift */,
+				0202078D2314386C0097F211 /* DataFetching.swift */,
+				020207A3231445020097F211 /* GenericTableViewDataSource.swift */,
+				020207AF23144B6E0097F211 /* ImageFetcher.swift */,
 				0202079923143E5E0097F211 /* URLDataFetcher.swift */,
 				0202079B23143FD70097F211 /* URLDataRetrieving.swift */,
 				020207A1231444570097F211 /* URLSession+URLDataRetrieving.swift */,
-				020207A3231445020097F211 /* GenericTableViewDataSource.swift */,
-				020207AF23144B6E0097F211 /* ImageFetcher.swift */,
 			);
 			path = "Cake List";
 			sourceTree = "<group>";
@@ -144,15 +142,13 @@
 		DBF17A301B0B648F004E6311 /* Cake ListTests */ = {
 			isa = PBXGroup;
 			children = (
-				DBF17A331B0B648F004E6311 /* Cake_ListTests.m */,
 				DBF17A311B0B648F004E6311 /* Supporting Files */,
 				020207872314347F0097F211 /* CakeTests.swift */,
 				0202078B2314379F0097F211 /* CakeRetrieverTests.swift */,
-				0202079D231440340097F211 /* URLDataFetcherTests.swift */,
 				020207A5231445200097F211 /* GenericTableViewDataSourceTests.swift */,
 				020207A923144A0D0097F211 /* ImageFetcherTests.swift */,
-				020207AB23144A5A0097F211 /* Mike.jpg */,
 				020207AD23144ACF0097F211 /* Mocks.swift */,
+				0202079D231440340097F211 /* URLDataFetcherTests.swift */,
 			);
 			path = "Cake ListTests";
 			sourceTree = "<group>";
@@ -160,6 +156,7 @@
 		DBF17A311B0B648F004E6311 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				020207AB23144A5A0097F211 /* Mike.jpg */,
 				DBF17A321B0B648F004E6311 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -304,7 +301,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF17A341B0B648F004E6311 /* Cake_ListTests.m in Sources */,
 				0202079E231440340097F211 /* URLDataFetcherTests.swift in Sources */,
 				020207882314347F0097F211 /* CakeTests.swift in Sources */,
 				020207AA23144A0D0097F211 /* ImageFetcherTests.swift in Sources */,
