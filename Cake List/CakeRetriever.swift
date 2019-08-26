@@ -16,7 +16,7 @@ struct CakeRetriever {
         dataFetcher.fetchData { result in
             switch result {
             case .success(let data):
-                parseCakeData(data, completion: completion)
+                self.parseCakeData(data, completion: completion)
             case .failure(let error):
                 completion(.failure(error))
             }
