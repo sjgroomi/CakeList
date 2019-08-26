@@ -7,9 +7,9 @@
 //
 
 //TODO: Cake object
-//TODO: Constraints?  Cake too big
-//TODO: ATS warnings (reason for some cakes not displaying?)
 //TODO: ¿Scrolling slow?  Something happening on main thread that shouldn't be?
+//TODO: Reimplement in swift (as mentioned in Miranda's email:
+//                           "Please complete the test using SWIFT.")
 
 #import "MasterViewController.h"
 #import "CakeCell.h"
@@ -22,6 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //TODO: Put table view configuration in its own method when reimplementing in Swift
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 100;
     [self getData];
 }
 
