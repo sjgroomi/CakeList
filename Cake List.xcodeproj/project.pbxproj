@@ -15,6 +15,10 @@
 		0202079A23143E5E0097F211 /* URLDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202079923143E5E0097F211 /* URLDataFetcher.swift */; };
 		0202079C23143FD70097F211 /* URLDataRetrieving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202079B23143FD70097F211 /* URLDataRetrieving.swift */; };
 		0202079E231440340097F211 /* URLDataFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202079D231440340097F211 /* URLDataFetcherTests.swift */; };
+		020207A0231443900097F211 /* CakesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202079F231443900097F211 /* CakesViewController.swift */; };
+		020207A2231444570097F211 /* URLSession+URLDataRetrieving.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207A1231444570097F211 /* URLSession+URLDataRetrieving.swift */; };
+		020207A4231445020097F211 /* GenericTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207A3231445020097F211 /* GenericTableViewDataSource.swift */; };
+		020207A6231445200097F211 /* GenericTableViewDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207A5231445200097F211 /* GenericTableViewDataSourceTests.swift */; };
 		DBF17A171B0B648F004E6311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A161B0B648F004E6311 /* main.m */; };
 		DBF17A1A1B0B648F004E6311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A191B0B648F004E6311 /* AppDelegate.m */; };
 		DBF17A1D1B0B648F004E6311 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A1C1B0B648F004E6311 /* MasterViewController.m */; };
@@ -44,6 +48,10 @@
 		0202079923143E5E0097F211 /* URLDataFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLDataFetcher.swift; sourceTree = "<group>"; };
 		0202079B23143FD70097F211 /* URLDataRetrieving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLDataRetrieving.swift; sourceTree = "<group>"; };
 		0202079D231440340097F211 /* URLDataFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLDataFetcherTests.swift; sourceTree = "<group>"; };
+		0202079F231443900097F211 /* CakesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakesViewController.swift; sourceTree = "<group>"; };
+		020207A1231444570097F211 /* URLSession+URLDataRetrieving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+URLDataRetrieving.swift"; sourceTree = "<group>"; };
+		020207A3231445020097F211 /* GenericTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSource.swift; sourceTree = "<group>"; };
+		020207A5231445200097F211 /* GenericTableViewDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewDataSourceTests.swift; sourceTree = "<group>"; };
 		DBF17A111B0B648F004E6311 /* Cake List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cake List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF17A151B0B648F004E6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF17A161B0B648F004E6311 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,6 +121,8 @@
 				0202078F231439090097F211 /* CakeRetriever.swift */,
 				0202079923143E5E0097F211 /* URLDataFetcher.swift */,
 				0202079B23143FD70097F211 /* URLDataRetrieving.swift */,
+				020207A1231444570097F211 /* URLSession+URLDataRetrieving.swift */,
+				020207A3231445020097F211 /* GenericTableViewDataSource.swift */,
 			);
 			path = "Cake List";
 			sourceTree = "<group>";
@@ -134,6 +144,7 @@
 				020207872314347F0097F211 /* CakeTests.swift */,
 				0202078B2314379F0097F211 /* CakeRetrieverTests.swift */,
 				0202079D231440340097F211 /* URLDataFetcherTests.swift */,
+				020207A5231445200097F211 /* GenericTableViewDataSourceTests.swift */,
 			);
 			path = "Cake ListTests";
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 			children = (
 				DBF17A1B1B0B648F004E6311 /* MasterViewController.h */,
 				DBF17A1C1B0B648F004E6311 /* MasterViewController.m */,
+				0202079F231443900097F211 /* CakesViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -271,8 +283,11 @@
 				DBF17A3F1B0B8E16004E6311 /* CakeCell.m in Sources */,
 				02020790231439090097F211 /* CakeRetriever.swift in Sources */,
 				0202079A23143E5E0097F211 /* URLDataFetcher.swift in Sources */,
+				020207A4231445020097F211 /* GenericTableViewDataSource.swift in Sources */,
 				0202078A231434B60097F211 /* Cake.swift in Sources */,
+				020207A2231444570097F211 /* URLSession+URLDataRetrieving.swift in Sources */,
 				0202079C23143FD70097F211 /* URLDataRetrieving.swift in Sources */,
+				020207A0231443900097F211 /* CakesViewController.swift in Sources */,
 				DBF17A1D1B0B648F004E6311 /* MasterViewController.m in Sources */,
 				DBF17A171B0B648F004E6311 /* main.m in Sources */,
 				0202078E2314386C0097F211 /* DataFetching.swift in Sources */,
@@ -286,6 +301,7 @@
 				DBF17A341B0B648F004E6311 /* Cake_ListTests.m in Sources */,
 				0202079E231440340097F211 /* URLDataFetcherTests.swift in Sources */,
 				020207882314347F0097F211 /* CakeTests.swift in Sources */,
+				020207A6231445200097F211 /* GenericTableViewDataSourceTests.swift in Sources */,
 				0202078C2314379F0097F211 /* CakeRetrieverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
