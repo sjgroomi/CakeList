@@ -11,28 +11,17 @@ import XCTest
 
 class CakeTests: XCTestCase {
     
-    private let lemonCheeseCake = """
+    private let lemonCheeseCakeJsonData = """
 {"title":"Lemon cheesecake","desc":"A cheesecake made of lemon","image":"https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg"}
-"""
+""".data(using: .utf8)!
 
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testLemonCheeseCakeDecodedFromJSONHasExpectedPropertyValues() throws {
+        let decoder = JSONDecoder()
+        let cake = try decoder.decode(Cake.self, from: lemonCheeseCakeJsonData)
+        XCTAssertEqual("Lemon cheesecake", cake.title)
+        XCTAssertEqual("A cheesecake made of lemon", cake.description)
+        XCTAssertEqual("https://s3-eu-west-1.amazonaws.com/s3.mediafileserver.co.uk/carnation/WebFiles/RecipeImages/lemoncheesecake_lg.jpg",
+                       cake.imageURL.absoluteString)
     }
 
 }

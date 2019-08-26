@@ -9,5 +9,12 @@
 import Foundation
 
 struct Cake: Decodable {
-    
+    enum CodingKeys: String, CodingKey {
+        case title
+        case description = "desc"
+        case imageURL = "image"
+    }
+    let title: String
+    let description: String
+    let imageURL: URL
 }
