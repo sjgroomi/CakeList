@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		020207882314347F0097F211 /* CakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020207872314347F0097F211 /* CakeTests.swift */; };
 		0202078A231434B60097F211 /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02020789231434B60097F211 /* Cake.swift */; };
+		0202078C2314379F0097F211 /* CakeRetrieverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202078B2314379F0097F211 /* CakeRetrieverTests.swift */; };
+		0202078E2314386C0097F211 /* DataFetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202078D2314386C0097F211 /* DataFetching.swift */; };
+		02020790231439090097F211 /* CakeRetriever.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0202078F231439090097F211 /* CakeRetriever.swift */; };
 		DBF17A171B0B648F004E6311 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A161B0B648F004E6311 /* main.m */; };
 		DBF17A1A1B0B648F004E6311 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A191B0B648F004E6311 /* AppDelegate.m */; };
 		DBF17A1D1B0B648F004E6311 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A1C1B0B648F004E6311 /* MasterViewController.m */; };
@@ -32,6 +35,9 @@
 /* Begin PBXFileReference section */
 		020207872314347F0097F211 /* CakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeTests.swift; sourceTree = "<group>"; };
 		02020789231434B60097F211 /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
+		0202078B2314379F0097F211 /* CakeRetrieverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeRetrieverTests.swift; sourceTree = "<group>"; };
+		0202078D2314386C0097F211 /* DataFetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFetching.swift; sourceTree = "<group>"; };
+		0202078F231439090097F211 /* CakeRetriever.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeRetriever.swift; sourceTree = "<group>"; };
 		DBF17A111B0B648F004E6311 /* Cake List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cake List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF17A151B0B648F004E6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF17A161B0B648F004E6311 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +103,8 @@
 				DBF17A261B0B648F004E6311 /* LaunchScreen.xib */,
 				DBF17A141B0B648F004E6311 /* Supporting Files */,
 				02020789231434B60097F211 /* Cake.swift */,
+				0202078D2314386C0097F211 /* DataFetching.swift */,
+				0202078F231439090097F211 /* CakeRetriever.swift */,
 			);
 			path = "Cake List";
 			sourceTree = "<group>";
@@ -116,6 +124,7 @@
 				DBF17A331B0B648F004E6311 /* Cake_ListTests.m */,
 				DBF17A311B0B648F004E6311 /* Supporting Files */,
 				020207872314347F0097F211 /* CakeTests.swift */,
+				0202078B2314379F0097F211 /* CakeRetrieverTests.swift */,
 			);
 			path = "Cake ListTests";
 			sourceTree = "<group>";
@@ -251,9 +260,11 @@
 			files = (
 				DBF17A1A1B0B648F004E6311 /* AppDelegate.m in Sources */,
 				DBF17A3F1B0B8E16004E6311 /* CakeCell.m in Sources */,
+				02020790231439090097F211 /* CakeRetriever.swift in Sources */,
 				0202078A231434B60097F211 /* Cake.swift in Sources */,
 				DBF17A1D1B0B648F004E6311 /* MasterViewController.m in Sources */,
 				DBF17A171B0B648F004E6311 /* main.m in Sources */,
+				0202078E2314386C0097F211 /* DataFetching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +274,7 @@
 			files = (
 				DBF17A341B0B648F004E6311 /* Cake_ListTests.m in Sources */,
 				020207882314347F0097F211 /* CakeTests.swift in Sources */,
+				0202078C2314379F0097F211 /* CakeRetrieverTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
