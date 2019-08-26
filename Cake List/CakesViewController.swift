@@ -8,10 +8,6 @@
 
 import UIKit
 
-//TODO: Pull to refresh
-//TODO: Reimplement cake cell constraints so that a nil image doesn't have a
-//      a zero width image view
-
 class CakesViewController: UITableViewController {
     
     let cakeRetriever: CakeRetriever = {
