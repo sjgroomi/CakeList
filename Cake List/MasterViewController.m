@@ -6,6 +6,11 @@
 //  Copyright (c) 2015 Stewart Hart. All rights reserved.
 //
 
+//TODO: Cake object
+//TODO: Constraints?  Cake too big
+//TODO: ATS warnings (reason for some cakes not displaying?)
+//TODO: ¿Scrolling slow?  Something happening on main thread that shouldn't be?
+
 #import "MasterViewController.h"
 #import "CakeCell.h"
 
@@ -30,7 +35,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CakeCell *cell = (CakeCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell"];
+    CakeCell *cell = (CakeCell*)[tableView dequeueReusableCellWithIdentifier:@"CakeCell"];
     
     NSDictionary *object = self.objects[indexPath.row];
     cell.titleLabel.text = object[@"title"];
